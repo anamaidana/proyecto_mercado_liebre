@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+h3 {
+    font-size: 24px;
+}
+.price {
+    font-size: 18px;
+}
+.discount, .description{
+    font: size 16px;
+}
+.fas fa-hand-holding-usd{
+    font: size 20px;
+    color: #666;
+}
+
+header {
+    background-color: #EAC926;
+}
+
