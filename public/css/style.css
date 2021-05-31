@@ -20,4 +20,12 @@ h3 {
 header {
     background-color: #EAC926;
 }
-
+.barra{
+    color: lightgrey
+}
+.burger-menu{
+    color: white;
+    background-color:#1259c3;
+    width: 50%;
+    margin: 0 auto;
+}
