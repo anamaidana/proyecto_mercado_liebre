@@ -9,14 +9,13 @@ h3 {
 .price {
     font-size: 18px;
 }
-.discount, .description{
+.discount {
     font: size 16px;
 }
-.fas fa-hand-holding-usd{
+.manito {
     font: size 20px;
     color: #666;
 }
-
 header {
     background-color: #EAC926;
 }
@@ -28,4 +27,26 @@ header {
     background-color:#1259c3;
     width: 50%;
     margin: 0 auto;
+}
+footer{
+    margin: auto;
+}
+.icono1, .icono2, .icono3{
+    size: 2em;
+}
+main{
+    margin: auto;
+    width: 90vw;
+}
+article{
+    margin: 5px;
+}
+.description{
+    font: size 16px;
+    display: none;
+}
+@media (min-width:769px){
+    .description{
+        display: block;
+    }
 }
