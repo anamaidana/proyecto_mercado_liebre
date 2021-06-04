@@ -23,10 +23,13 @@ header {
     color: lightgrey
 }
 .burger-menu{
+    display: flex;
     color: white;
     background-color:#1259c3;
     width: 50%;
-    margin: 0 auto;
+    border-radius: 5px;
+    justify-content: center;
+    align-items:center;
 }
 footer{
     margin: auto;
@@ -45,8 +48,13 @@ article{
     font: size 16px;
     display: none;
 }
-@media (min-width:769px){
+@media (min-width:768px){
     .description{
         display: block;
+        }
+}
+@media (max-width:769px){
+    .description{
+        box-shadow: ​ 0px​  ​ 0px​  ​ 10px​  ​ rgb​ (​ 100​ , ​ 100​ , ​ 100​ );
     }
 }
