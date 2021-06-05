@@ -58,3 +58,36 @@ article{
         box-shadow: ​ 0px​  ​ 0px​  ​ 10px​  ​ rgb​ (​ 100​ , ​ 100​ , ​ 100​ );
     }
 }
+.envio{
+    margin: ​ 0​ px​ ;
+    padding: ​ 0​ px​ ; 
+    box-sizing: ​ border-box​ ;
+}
+main​  ​ section​  ​ article​  ​ i​ {
+    display: ​ block​ ;
+    font-size: ​ 16​ px​ ;
+    padding: ​ 5​ px​ ;
+    width: ​ 30​ px​ ;
+    height: ​ 30​ px​ ;
+    border: ​ 1​ px​  ​ solid​  ​ #39b54a ;
+    background-color: ​ #fff ;
+    border-radius: 50​vw;
+    position: ​ absolute​ ;
+    right: ​ 20​ px​ ;
+    top: ​ -15​ px​ ;
+}
+.logo1{
+    width: 50%;
+}
+.barra1{
+    width: 50%;
+}
+.banner1{
+    width: 100%;
+}
+.image{
+    width: 100vw;
+}
+.image1, .image2, .image3, .image4, .image5, .image6, .image7{
+    width: 100%;
+}
