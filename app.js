@@ -16,3 +16,13 @@ app.get("/", (req, res)=>{
     res.sendFile(rutaHaciaHome);
 })
 //app.get("/nosotros", (req,res)=>)
+app.get("/register", (req, res)=>{
+    const rutaHaciaRegistro=path.resolve(__dirname, "views/register.html");
+    console.log(rutaHaciaRegistro)
+    res.sendFile(rutaHaciaRegistro);
+})
+app.get("/login", (req, res)=>{
+    const rutaHaciaLogin=path.resolve(__dirname, "views/login.html");
+    console.log(rutaHaciaLogin)
+    res.sendFile(rutaHaciaLogin);
+})
