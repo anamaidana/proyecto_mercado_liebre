@@ -1,5 +1,7 @@
-*{
-    box-sizing: border-box;
+*​ {
+    margin: ​ 0​ px​ ;
+    padding: ​ 0​ px​ ; 
+    box-sizing: ​ border-box​ ;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,10 +14,14 @@ h3 {
 }
 .price {
     font-size: 18px;
+    text-align: left;
+    width: 70%;
 }
 .discount {
-    font: size 16px;
+    font-size: 18px;
+    text-align: left;
     color: #39b54a;
+    width: 30%;
 }
 .description{
     font-size: 16px;
@@ -72,6 +78,7 @@ main{
     width: 90vw;
     margin: auto;
     display: block;
+    background-color: #ebebee;
 }
 article{
     margin: 5px;
@@ -112,4 +119,46 @@ article{
 .hija{
     border-top: 1px solid #ebebee;
     margin: 15px;
+}
+.contenedorLogo{
+    display: flex;
+    width: 100vw;
+}
+.logo{
+    width: 50%;
+}
+ 
+main​  ​ section​  ​ article​  ​ i​ {
+    display: ​ block​ ;
+    font-size: ​ 16​ px​ ;
+    padding: ​ 5​ px​ ;
+    width: ​ 30​ px​ ;
+    height: ​ 30​ px​ ;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: ​ absolute​ ;
+    right: ​ 20​ px​ ;
+    top: ​ -15​ px​ ;
+}
+.precio-descuento{
+    display: flex;
+}
+.contenedor-productos{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px){
+    .contenedor-productos article{
+        width: 50%;
+    }
+}
+@media (min-width:1024px){
+    .contenedor-productos article{
+        width: 25%;
+    }
+}
+img{
+    max-width: 100%;
 }
