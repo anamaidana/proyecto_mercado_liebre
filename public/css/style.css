@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     margin: 0;
+    background-color: #ebebee;
 }
 
 h3 {
@@ -78,7 +79,6 @@ main{
     width: 90vw;
     margin: auto;
     display: block;
-    background-color: #ebebee;
 }
 article{
     margin: 5px;
@@ -149,6 +149,7 @@ main​  ​ section​  ​ article​  ​ i​ {
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #fff;
 }
 @media (min-width: 768px){
     .contenedor-productos article{
@@ -160,6 +161,29 @@ main​  ​ section​  ​ article​  ​ i​ {
         width: 25%;
     }
 }
-img{
+img, img.logo1, input{
     max-width: 100%;
+}
+input{
+    border-radius: 5px;
+    width: 90%;
+    height: 30%;
+    border: 0;
+    padding: 10px;
+}
+.contenedor-logo-busqueda{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.circulo-camion{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
