@@ -148,6 +148,7 @@ main​  ​ section​  ​ article​  ​ i​ {
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
+    justify-content: center;
 }
 @media (min-width: 768px){
     .contenedor-productos article{
