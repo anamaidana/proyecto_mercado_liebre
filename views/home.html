@@ -11,23 +11,30 @@
 <body>
 <header>
     <div class= "contenedor-logo-busqueda">
-        <span class="logo"><img src="/imgs/logo-mercado-liebre.svg" alt="logo mercado libre" width="360" class="logo1"></span>
-        <span><input type="search" placeholder="Buscar productos, marcas"><i class="fas fa-search"></i></span>
+        <div class="logo"><img src="/imgs/logo-mercado-liebre.svg" alt="logo mercado libre" width="360" class="logo1"></div>
+        <div class="formulario-busqueda"><form action="/views/home.html" method="GET">
+            <label for="busqueda"></label>
+            <div class="busqueda"><input type="busqueda" name="busqueda" placeholder="Buscar productos, marcas" ><i class="fas fa-search lupa"></i></div>
+        </form>
+        </div>
     </div>
-    <p class="compra"><i class="fas fa-hand-holding-usd manito"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-    <nav>
-    <ul type="none">
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Tiendas Oficiales</a></li>
-        <li><a href="#">Vender</a></li>
-        <li><a href="#">Ayuda</a></li>
+    <div class="contenedor-compra">
+    <div class="compra"><p><i class="fas fa-hand-holding-usd manito"></i>Comprá en cuotas y sin tarjeta de crédito</p></div>
+    </div>
+    <div class="navegacion"><ul type="none">
+        <div class="text"><li><a href="#">Ofertas</a></li></div>
+        <div class="text"><li><a href="#">Tiendas Oficiales</a></li></div>
+        <div class="text"><li><a href="#">Vender</a></li></div>
+        <div class="text"><li><a href="#">Ayuda</a></li></div>
     </ul>
-    <ul type="none">
-        <li><a href="#">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
-        <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
-        <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+    </div>
+    <div class="navegacion2"><ul type="none">
+        <div class="text"><li><a href="/views/register.html">Creá tu cuenta<i class="far fa-id-card"></i></a></li></div>
+        <div class="text"><li><a href="/views/login.html">Ingresá<i class="fas fa-sign-in-alt"></i></a></li></div>
+        <div class="text"><li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li></div>
     </ul>
-    </nav>
+    </div>
+    </div>
         <div id="burger">
             <i class="fas fa-bars burger"></i>
         </div>

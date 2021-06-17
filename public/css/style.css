@@ -35,6 +35,12 @@ h3 {
 article:hover .description{
     opacity: 1;
 }
+.contenedor-compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .compra{
     font-family: 'Roboto', sans-serif;
 }
@@ -51,9 +57,11 @@ a{
     color: black;
     margin-left: 5px;
 }
-ul{
-    margin: 0;
-    padding: 0;
+.navegacion, .navegacion2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .banner{
     width: 100vw;
@@ -124,10 +132,6 @@ article{
         display: none;
     }
 }
-.hija{
-    border-top: 1px solid #ebebee;
-    margin: 15px;
-}
 .contenedorLogo{
     display: flex;
     width: 100vw;
@@ -135,7 +139,6 @@ article{
 .logo{
     width: 50%;
 }
- 
 main​  ​ section​  ​ article​  ​ i​ {
     display: ​ block​ ;
     font-size: ​ 16​ px​ ;
@@ -152,7 +155,7 @@ main​  ​ section​  ​ article​  ​ i​ {
 .precio-descuento{
     display: flex;
 }
-.contenedor-productos{
+article{
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
@@ -160,12 +163,12 @@ main​  ​ section​  ​ article​  ​ i​ {
     background-color: #fff;
 }
 @media (min-width: 768px){
-    .contenedor-productos article{
+    article{
         width: 50%;
     }
 }
 @media (min-width:1024px){
-    .contenedor-productos article{
+    article{
         width: 25%;
     }
 }
@@ -174,7 +177,7 @@ img, img.logo1, input{
 }
 input{
     border-radius: 5px;
-    width: 90%;
+    width: 50%;
     border: 0;
     padding: 10px;
 }
@@ -182,6 +185,22 @@ input{
     display: flex;
     padding: 20px;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lupa{
+    width: 5px;
+    text-align: right;
+}
+.logo{
+width: 50%;
+flex-grow: 0.50;
+}
+.formulario-busqueda{
+width: 50%;
+flex-grow: 0.50;
+text-align: left;
 }
 .circulo-camion{
     display: flex;
@@ -193,4 +212,14 @@ input{
     align-items: center;
     justify-content: center;
     align-content: center;
+    transition: all 3s;
+}
+.circulo-camion:hover{
+    transform: rotate(360deg);
+}
+.boton-login{
+    transition: all 3s;
+}
+.boton-login:hover{
+    background-color: #0022AA;
 }
