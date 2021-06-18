@@ -5,8 +5,9 @@ const path= require ("path");
 const carpetaPublica=path.resolve(__dirname,"public");
 app.use (express.static(carpetaPublica));
 
-app.listen (process.env.PORT || 3000 function (){
-    console.log ("Servidor corriendo en el puerto 3000"));
+app.listen(process.env.PORT || 3000, function(){
+    console.log ("Servidor corriendo en el puerto 3000")}
+);
 
 //Ruta que cuando reciba la petición
 //Devuelva la vista
