@@ -38,60 +38,70 @@
     </section>
 </header>
 <main>
-<form method="POST" action="/">
-    <fieldset>
-        <label for="nombre-completo">Ingrese su nombre completo</label>
-        <input type="text" id="nombre-completo" name="nombre-completo" placeholder="Ej: Juan Garcia" required>
+<form method="POST" action="/" class="registro-form">
+    <fieldset class="campo-form">
+        <input type="text" id="nombre-completo" name="nombre-completo" class="control" placeholder="Nombre y Apellido" required>
     </fieldset>
-    <fieldset>
-        <label for="nombre-usuario">Ingrese su usuario</label>
-        <input type="text" id="nombre-usuario" name="nombre-usuario" placeholder="Ej: Juangarcia" required>
+    <fieldset class="campo-form">
+        <input type="text" id="nombre-usuario" name="nombre-usuario" class="control" minlength="4" maxlength="12" placeholder="Nombre de usuario" required>
     </fieldset>
-    <fieldset>
-        <label for="fechaDeNacimiento">Ingrese su fecha de nacimiento</label>
-        <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
+    <fieldset class="campo-form">
+        <input type="text" id="mail" name="mail" class="control" placeholder="Email" required>
     </fieldset>
-    <fieldset>
-        <label for="domicilio">Ingrese su domicilio</label>
-        <input type="text" id="domicilio" name="domicilio" placeholder="Ej: Av. Corrientes 1234" required>
+    <fieldset class="campo-form">
+        <label for="fechaDeNacimiento" class="titulo-campo">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="control" required>
     </fieldset>
-    <fieldset>
-        <label>Categorías</label>
-        <label>
-            Electro
-            <input type="checkbox" value="Electro">
-        </label>
-        <label>
-            Moda
-            <input type="checkbox" value="Moda">
-        </label>
-        <label>
-            Hogar
-            <input type="checkbox" value="Hogar">
-        </label>
-        <label>
-            Juguetería
-            <input type="checkbox" value="Juguetería">
-        </label>
-        <label>
-            Vida sana
-            <input type="checkbox" value="Vida sana">
-        </label>
+    <fieldset class="campo-form">
+        <input type="text" id="domicilio" name="domicilio" class="control" placeholder="Domicilio" required>
     </fieldset>
-    <fieldset>
-        <label>Seleccionar una imagen de usuario</label>
-        <input type="file" name="avatar" accept=".jpg" required> 
+    <fieldset class="campo-form">
+        <label for="perfilUsuario" class="titulo-campo">Perfil de usuario:</label>
+            <div class="perfil-usuario">
+                <input type="radio" name="perfilUsuario" id="comprador" class="control">
+                <label for="comprador">Comprador</label>
+                <input type="radio" name="perfilUsuario" id="vendedor" class="control">
+                <label for="vendedor">Vendedor</label>
+            </div>
     </fieldset>
-    <fieldset>
-        <label for="contraseña">Ingrese su contraseña</label>
-        <input type="password" id="contraseña" name="contraseña" required>
+    <fieldset class="campo-form">
+        <label class="titulo-campo">Categorías de interés</label>
+        <div class="intereses-usuario">
+            <label for="electro">
+                <input type="checkbox" name="electro" id="electro">
+                "Electro"
+            </label>
+            <label for="moda">
+                <input type="checkbox" name="moda" id="moda">
+                "Moda"
+            </label>
+            <label for="hogar">
+                <input type="checkbox" name="hogar" id="hogar">
+                "Hogar"
+            </label>
+            <label for="jugueteria">
+                <input type="checkbox" name="jugueteria" id="jugueteria">
+                "Juguetería"
+            </label>
+            <label for="Vida sana">
+                <input type="checkbox" name="Vida sana" id="Vida sana">
+                "Vida sana"
+            </label>
     </fieldset>
-    <fieldset>
-        <label for="confirmar-contraseña">Confirme su contraseña</label>
-        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
+    <fieldset class="campo-form">
+        <label for="fotoUsuario" class="titulo-campo">Foto de usuario:</label>
+        <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".jpg"> 
     </fieldset>
-    <button type="submit">Enviar</button>
-    <button type="reset">Borrar</button>
+    <fieldset class="campo-form">
+        <input type="password" id="contraseña" name="contraseña" class="control" minlength="4" maxlength="12"  placeholder="Contraseña" required>
+    </fieldset>
+    <fieldset class="campo-form">
+        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" minlength="4" maxlength="12" placeholder="Confirmar contraseña" required>
+    </fieldset>
+    <fieldset class="campo-form">
+    <button type="submit" class="boton-formulario">Enviar</button>
+    <button type="reset" class="boton-formulario">Borrar</button>
+    </fieldset>
 </form>
 </main>
 <footer>
